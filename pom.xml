@@ -17,6 +17,22 @@
 				<role>Developer</role>
 			</roles>
 		</developer>
+        <developer>
+            <name>LichBX</name>
+            <email>xxx@gmail.com</email>
+            <organization>Vietsoftware International</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>ThienDN</name>
+            <email>xx@gmail.com</email>
+            <organization>Vietsoftware International</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
 	</developers>
 
 	<properties>
