@@ -33,11 +33,13 @@
                 <role>Developer</role>
             </roles>
         </developer>
-	</developers>
+    </developers>
 
 	<properties>
 		<liferay.version>6.2.0-ga1</liferay.version>
 		<spring.version>4.3.1.RELEASE</spring.version>
+		<jpa.version>3.6.8.Final</jpa.version>
+
 		<liferay.auto.deploy.dir>D:\ex\liferay-portal-6.2-ce-ga6\deploy</liferay.auto.deploy.dir>
 		<liferay.app.server.deploy.dir>D:\ex\liferay-portal-6.2-ce-ga6\tomcat-7.0.62\webapps</liferay.app.server.deploy.dir>
 		<liferay.app.server.lib.global.dir>D:\ex\liferay-portal-6.2-ce-ga6\tomcat-7.0.62\lib\ext</liferay.app.server.lib.global.dir>
@@ -146,6 +148,11 @@
 		</dependency>
 		
 		<!-- Spring dependancy -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc-portlet</artifactId>
@@ -156,14 +163,24 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+        <!-- JPA -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${jpa.version}</version>
+        </dependency>
 
-		<dependency>
+        <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
@@ -173,7 +190,6 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
 
 		<!-- slf4j -->
 		<dependency>

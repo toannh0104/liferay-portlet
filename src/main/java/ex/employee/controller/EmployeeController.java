@@ -32,7 +32,6 @@ public class EmployeeController {
    */
   @RenderMapping
   public String defaultRender(Map<String, Object> map) {
-    logger.debug("in defaultRender()");
     return EMPLOYEE_LIST_JSP;
   }
 }
